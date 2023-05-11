@@ -1,0 +1,225 @@
+.advantages {
+    width: 100%;
+    padding: 40px 16px;
+    min-height: calc(100vh - 99px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #171C21;
+
+    @media(max-width: $md1) {
+        min-height: calc(100vh - 85px);
+    }
+
+    @media(max-width: $md2) {
+        min-height: calc(100vh - 54px);
+    }
+
+    .advantages__container {
+        width: 100%;
+        max-width: 982px;
+
+        .advantages__title {
+            width: 100%;
+            max-width: 748px;
+            margin: 0 auto 30px;
+
+            @media(max-width: $md1) {
+                margin-bottom: 20px;
+            }
+
+            h1 {
+                font-family: 'Inter';
+                font-style: normal;
+                font-weight: 800;
+                font-size: 64px;
+                line-height: 77px;
+                text-align: center;
+                margin-bottom: 20px;
+                color: #FFFFFF;
+                position: relative;
+
+                @media(max-width: $md1) {
+                    font-size: 40px;
+                    line-height: 50px;
+                }
+
+                @media(max-width: $md3) {
+                    font-size: 24px;
+                    line-height: 30px;
+                }
+            }
+
+            p {
+                font-family: 'Inter';
+                font-style: normal;
+                font-weight: 800;
+                font-size: 24px;
+                position: relative;
+                line-height: 29px;
+                text-align: center;
+                color: #FFFFFF;
+
+                @media(max-width: $md1) {
+                    font-size: 18px;
+                    line-height: 24px;
+                }
+
+                @media(max-width: $md3) {
+                    font-size: 14px;
+                    line-height: 18px;
+                }
+            }
+        }
+
+        .advantages__flex {
+            width: 100%;
+            max-width: 748px;
+            margin: 0 auto 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            @media(max-width: $md1) {
+                margin-bottom: 20px;
+                max-width: 500px;
+            }
+
+            .advantages__flex-item {
+                width: 180px;
+                height: 180px;
+                background: #FFFFFF;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                position: relative;
+                flex-direction: column;
+                border-radius: 50%;
+
+                @media(max-width: $md1) {
+                    width: 140px;
+                    height: 140px;
+                }
+
+                @media(max-width: $md3) {
+                    width: 100px;
+                    height: 100px;
+                }
+
+                span {
+                    font-family: 'Inter';
+                    font-style: normal;
+                    font-weight: 800;
+                    font-size: 36px;
+                    line-height: 44px;
+                    text-align: center;
+                    color: #030210;
+
+                    @media(max-width: $md1) {
+                        font-size: 26px;
+                        line-height: 32px;
+                    }
+
+                    @media(max-width: $md3) {
+                        font-size: 18px;
+                        line-height: 24px;
+                    }
+                }
+
+                p {
+                    font-family: 'Inter';
+                    font-style: normal;
+                    font-weight: 800;
+                    font-size: 20px;
+                    line-height: 24px;
+                    text-align: center;
+                    color: #030210;
+
+                    @media(max-width: $md1) {
+                        font-size: 16px;
+                        line-height: 22px;
+                    }
+
+                    @media(max-width: $md3) {
+                        font-size: 12px;
+                        line-height: 14px;
+                    }
+                }
+            }
+        }
+
+        h4 {
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 800;
+            font-size: 20px;
+            line-height: 24px;
+            position: relative;
+            text-align: center;
+            margin-bottom: 20px;
+            color: #FFFFFF;
+
+            @media(max-width: $md1) {
+                font-size: 16px;
+                line-height: 22px;
+            }
+        }
+
+        .advantages__grid {
+            width: 100%;
+            display: grid;
+            grid-template-columns: repeat(6, 1fr);
+            grid-gap: 14px;
+            margin-bottom: 30px;
+
+            @media(max-width: $md1) {
+                grid-template-columns: repeat(3, 1fr);
+            }
+
+            @media(max-width: $md3) {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .advantages__grid-item {
+                width: 100%;
+                padding: 10px 8px;
+                background: #FFFFFF;
+                border-radius: 10px;
+                position: relative;
+
+                p {
+                    font-family: 'Inter';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 19px;
+                    text-align: center;
+                    color: #030210;
+                }
+            }
+        }
+
+        button {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0 auto;
+            max-width: 192px;
+            height: 52px;
+            background: #FFFFFF;
+            position: relative;
+            border-radius: 10px;
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 24px;
+            color: #030210;
+
+            svg {
+                margin-left: 16px;
+            }
+        }
+    }
+}
